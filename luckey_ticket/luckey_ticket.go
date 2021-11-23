@@ -10,8 +10,8 @@ import (
 
 func main() {
 	fmt.Println("Введите значение")
-	num_of_thicket := read_input()
-	check_ticket(num_of_thicket)
+	num_of_ticket := read_input()
+	check_ticket(num_of_ticket)
 }
 
 func read_input() string {
@@ -44,11 +44,11 @@ func read_input() string {
 	}
 }
 
-func check_ticket(num_of_thicket string) {
-	center_of_string := len(num_of_thicket) / 2
+func check_ticket(num_of_ticket string) {
+	center_of_string := len(num_of_ticket) / 2
 
-	first_part := num_of_thicket[center_of_string:]
-	second_part := num_of_thicket[:center_of_string]
+	first_part := num_of_ticket[center_of_string:]
+	second_part := num_of_ticket[:center_of_string]
 
 	first_sum := 0
 	second_sum := 0
